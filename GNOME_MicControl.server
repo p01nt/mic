@@ -1,5 +1,5 @@
 <oaf_info>
-	<oaf_server iid="OAFIID:MicControl_Factory" type="exe" location="/server/mic/mic.py"> 
+	<oaf_server iid="OAFIID:MicControl_Factory" type="exe" location="/usr/lib/gnome-applets/mic.py"> 
 		<oaf_attribute name="repo_ids" type="stringv">
 			<item value="IDL:Bonobo/GenericFactory:1.0" />
 			<item value="IDL:Bonobo/Unknown:1.0" />
@@ -19,7 +19,7 @@
 	<oaf_attribute name="name" type="string" value="MicControl" />
 	<oaf_attribute name="description" type="string" value="Microphone Control" />
 	<oaf_attribute name="panel:category" type="string" value="Accessories" />
-	<oaf_attribute name="panel:icon" type="string" value="/server/mic/img/mic_on.png" />
+	<oaf_attribute name="panel:icon" type="string" value="/usr/lib/gnome-applets/mic_logo.png" />
 </oaf_server>
 </oaf_info>
 

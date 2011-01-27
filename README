@@ -1,0 +1,3 @@
+Install:
+	chmod +x install
+	./install (run as root)

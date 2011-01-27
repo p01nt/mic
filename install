@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ln -sv `pwd`/GNOME_MicControl.server /usr/lib/bonobo/servers/
+ln -sv `pwd`/img/* /usr/share/pixmaps/
+ln -sv `pwd`/mic.py /usr/lib/gnome-applets/
