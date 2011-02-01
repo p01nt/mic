@@ -47,7 +47,7 @@ class GnomeMicControl(gnomeapplet.Applet):
 			self.init_menu()
 
 	def menu(self, event, data = None):
-		gnome.ui.About('GNOME Microphone Control', '0.2', 'GNU GPLv3', '', ['p01nt <pasha@klets.name>',]).show()
+		gnome.ui.About('GNOME Microphone Control', '0.2', 'GNU GPLv3', '', ['Pasha p01nt Klets <pasha@klets.name>',]).show()
 
 	def change_status(self):
 		getoutput('amixer set Capture toggle')

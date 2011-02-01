@@ -1,0 +1,12 @@
+Source: gnome-mic-control
+Section: graphics
+Priority: extra
+Maintainer: Pasha Klets <pasha@klets.name>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7), cdbs
+Homepage: 
+
+Package: gnome-mic-control
+Depends: python2.6
+Architecture: any
+Description: Gnome mic control applet.

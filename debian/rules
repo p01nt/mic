@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+binary-install/gnome-mic-control::
+	install -m 0755 -d $(DEB_DESTDIR)/usr/lib/gnome-applets
+	install -m 0755 -d $(DEB_DESTDIR)/usr/share/pixmaps
+	install -m 0755 -d $(DEB_DESTDIR)/usr/lib/bonobo/servers
+	install -m 0644 $(DEB_SRCDIR)/src/GNOME_MicControl.server $(DEB_DESTDIR)/usr/lib/bonobo/servers/GNOME_MicControl.server
+	install -m 0645 $(DEB_SRCDIR)/src/mic $(DEB_DESTDIR)/usr/lib/gnome-applets/mic
+	install -m 0644 $(DEB_SRCDIR)/img/mic_logo.png $(DEB_DESTDIR)/usr/share/pixmaps/mic_logo.png
+	install -m 0644 $(DEB_SRCDIR)/img/mic_off.png $(DEB_DESTDIR)/usr/share/pixmaps/mic_off.png
+	install -m 0644 $(DEB_SRCDIR)/img/mic_on.png $(DEB_DESTDIR)/usr/share/pixmaps/mic_on.png
