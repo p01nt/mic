@@ -1,9 +1,11 @@
 #!/bin/sh -e
+#DEBHELPER#
 
 case "$1" in
 	configure)
 		# see below
-		killall gnome-panel
+		# killall gnome-panel
+		kill -1 `ps ax | awk '{if ($5 == "gnome-panel") print $1;}'`
 		;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
